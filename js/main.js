@@ -41,7 +41,7 @@ const contactList = document.getElementById('contact_list');
 
 function viewContact(e) {
     localStorage.currentContact = JSON.stringify(fetchContact(e.target.id));
-    window.location.href = `${window.location.origin}/view_contact.html`;
+    window.location.href = "view_contact.html";
 };
 
 
@@ -147,7 +147,7 @@ function main() {
     });
     
     document.getElementById('create_new_contact').addEventListener('click', function (e) {
-        window.location.href = "https://osalotioman.github.io/Trie-PhoneBook/new_contact.html";
+        window.location.href = "new_contact.html";
     });
 }
 
