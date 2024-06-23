@@ -147,7 +147,7 @@ function main() {
     });
     
     document.getElementById('create_new_contact').addEventListener('click', function (e) {
-        window.location.href = `${window.location.origin}/Trie-PhoneBook/new_contact.html`;
+        window.location.href = "new_contact.html";
     });
 }
 

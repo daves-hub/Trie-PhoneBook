@@ -21,7 +21,7 @@ function main() {
 
             document.getElementById('contact_name').value = '';
             document.getElementById('phone_number').value = '';
-            window.location.href = `${window.location.origin}/Trie-PhoneBook/index.html`;
+            window.location.href = "index.html";
         } else {
             alert("Please fill out both fields.");
         }
