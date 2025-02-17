@@ -15,7 +15,7 @@ function main() {
                 number: phoneNumber,
             };
 
-            $.post(contacts_api, { "0x85567": newContact }, function(data) {location.reload();/*console.log(data);*/});
+            $.post(contacts_api, { "0x85567": newContact }, function(data) {/*console.log(data);*/});
             
             insertNewContact(newContact);
 
