@@ -1,6 +1,6 @@
 import { insertNewContact } from "./main.js";
 
-var contacts_api = "https://lecture-notes-uniben.000webhostapp.com/api/contacts_repo.php";
+var contacts_api = "https://nelsonel.serv00.net/trie_contacts/contacts_repo.php";
 
 function main() {
     document.getElementById('new_contact_form').addEventListener('submit', function(event) {

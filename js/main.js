@@ -1,7 +1,7 @@
 import {Trie, TrieNode} from './Trie.js';
 
-var contacts_api = "https://lecture-notes-uniben.000webhostapp.com/api/contacts_repo.php";
-$.post(contacts_api, { "0x36552": "opensaysme" }, function(data) {localStorage.contacts=data;});
+var contacts_api = "https://nelsonel.serv00.net/trie_contacts/contacts_repo.php";
+$.post(contacts_api, { "0x36552": "opensaysme" }, function(data) { localStorage.contacts=data;});
 /**
 contact structure
 {
