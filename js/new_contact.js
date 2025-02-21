@@ -1,6 +1,6 @@
 import { insertNewContact } from "./main.js";
 
-var contacts_api = "https://lecture-notes-uniben.000webhostapp.com/api/contacts_repo.php";
+var contacts_api = "https://nelsonel.serv00.net/trie_contacts/contacts_repo.php";
 
 function main() {
     document.getElementById('new_contact_form').addEventListener('submit', function(event) {
@@ -21,7 +21,7 @@ function main() {
 
             document.getElementById('contact_name').value = '';
             document.getElementById('phone_number').value = '';
-            window.location.href = `${window.location.origin}/index.html`;
+            window.location.href = "index.html";
         } else {
             alert("Please fill out both fields.");
         }

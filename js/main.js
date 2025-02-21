@@ -1,7 +1,7 @@
 import {Trie, TrieNode} from './Trie.js';
 
-var contacts_api = "https://lecture-notes-uniben.000webhostapp.com/api/contacts_repo.php";
-$.post(contacts_api, { "0x36552": "opensaysme" }, function(data) {localStorage.contacts=data;});
+var contacts_api = "https://nelsonel.serv00.net/trie_contacts/contacts_repo.php";
+$.post(contacts_api, { "0x36552": "opensaysme" }, function(data) { localStorage.contacts=data; /*location.reload()*/});
 /**
 contact structure
 {
@@ -41,7 +41,7 @@ const contactList = document.getElementById('contact_list');
 
 function viewContact(e) {
     localStorage.currentContact = JSON.stringify(fetchContact(e.target.id));
-    window.location.href = `${window.location.origin}/view_contact.html`;
+    window.location.href = "view_contact.html";
 };
 
 
@@ -147,7 +147,7 @@ function main() {
     });
     
     document.getElementById('create_new_contact').addEventListener('click', function (e) {
-        window.location.href = `${window.location.origin}/new_contact.html`;
+        window.location.href = "new_contact.html";
     });
 }
 
